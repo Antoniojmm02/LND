@@ -164,6 +164,19 @@ align-items: center;
     margin-bottom: .5rem;
     margin-top: 0.5rem;
 }
+.campo h2{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem; ;
+    border: none;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin-top: 0;
+}
 .imput-text{
     width: 100%;
     padding: 1rem;
@@ -186,11 +199,8 @@ align-items: center;
     .campo:nth-child(4){
         grid-column: 1/3;
     }
-}
-.enviar{
-    border: 2px red solid;
-    border-radius: .5rem;
-    text-transform: uppercase;
-    background-color: var(--secundario);
+    .campo:nth-child(5){
+        grid-column: 2/3;
+    }
 }
 
