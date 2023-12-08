@@ -203,4 +203,28 @@ align-items: center;
         grid-column: 2/3;
     }
 }
+table,
+th,
+td{
+    border: 1px solid black;
+}
+table{
+    width: 100%;
+}
+td,
+th{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+td:nth-child(2):hover{
+    background-color:var(--primario);
+}
+th{
+    background-color: var(--secundario);
+}
+
+
 
