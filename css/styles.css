@@ -68,7 +68,7 @@ h2 span{
 .ham-menu.active span:nth-child(2){
     opacity: 0;
 }
-.ham-menu.active span:nth-child(1){
+.ham-menu.active span:nth-child(3){
     top: 50%;
     transform: translate(-50%,50%)rotate(-45deg);
 }
