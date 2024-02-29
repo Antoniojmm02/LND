@@ -21,6 +21,7 @@ body{
 .titulo{
     text-align: center;
     font-size: 2.8rem;
+    padding: 10px 0;
 }
 .titulo span{
     font-size: 1.2rem;
@@ -33,16 +34,26 @@ h2 span{
     background-color: var(--secundario);
 }
 /* de aqui  */
+.hambur{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 .hambur nav{
-    padding: 1rem;
+    padding: 5px;
     display: flex;
-    background-color: rgb(34, 37, 49);
+    background-color: var();
+}
+.hambur.active nav{
+    background-color:transparent;
 }
 .ham-menu{
     height: 50px;
     width: 50px;
     margin-left: auto;
     position: relative;
+    opacity: 1;
 }
 .ham-menu span{
     height: 5px;
@@ -53,7 +64,7 @@ h2 span{
     top: 50%;   
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: .3 ease;
+    transition: .3s ease;
 }
 .ham-menu span:nth-child(1){
     top: 25%;
@@ -70,8 +81,9 @@ h2 span{
 }
 .ham-menu.active span:nth-child(3){
     top: 50%;
-    transform: translate(-50%,50%)rotate(-45deg);
+    transform: translate(-50%,-50%)rotate(-45deg);
 }
+
 .off-screen-menu{
     background-color: var(--secundario);
     height: 100vh;
