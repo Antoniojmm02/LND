@@ -26,6 +26,13 @@ body{
 .titulo span{
     font-size: 1.2rem;
 }
+
+
+
+
+
+
+/* Navegacion */
 h2 span{
     color: var(--primario);
     font-size: 2.8rem;
@@ -39,6 +46,7 @@ h2 span{
     width: 100%;
     top: 0;
     left: 0;
+    transition: 0.3s top;
 }
 .hambur nav{
     padding: 5px;
@@ -104,14 +112,14 @@ h2 span{
     text-align: center;
 }
 .navegacion-principal{
-    display: flex;
-    text-align:center;
-    justify-content: space-around;
-    flex-direction: column;
+    display: none;
 }
 @media(min-width:768px){
     .navegacion-principal{
         flex-direction: row;
+        display: flex;
+        text-align:center;
+        justify-content: space-around;
     }
 }
 .navegacion-principal a{
@@ -120,6 +128,13 @@ h2 span{
     text-decoration: none;
     padding: 1rem;
 }
+
+
+
+
+
+
+/* ImagenFondo */
 .navegacion-principal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
@@ -152,6 +167,12 @@ h2 span{
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+/* BotonCentro */
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
@@ -172,6 +193,12 @@ h2 span{
     }
 }
 
+
+
+
+
+
+/* Main */
 .sombra{
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.53);
     background-color: var(--blanco);
@@ -202,6 +229,15 @@ align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+
+
+
+
+
+
+
+
 /* Formulario */
 .formulario{
     background-color: var(--gris);
@@ -268,6 +304,16 @@ align-items: center;
         grid-column: 2/3;
     }
 }
+
+
+
+
+
+
+
+
+
+/* Tabla */
 table,
 th,
 td{
