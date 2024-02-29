@@ -17,6 +17,7 @@ body{
     font-size: 16px;
     font-family: 'Mooli', sans-serif;
     background-image: linear-gradient(to top,var(--grisclaro)0%,var(--blanco)100%);
+    height: 9000px;
 }
 .titulo{
     text-align: center;
@@ -47,6 +48,9 @@ h2 span{
     top: 0;
     left: 0;
     transition: 0.3s top;
+    display: flex;
+    justify-content: end;
+    z-index: 0;
 }
 .hambur nav{
     padding: 5px;
@@ -54,7 +58,7 @@ h2 span{
     background-color: var();
 }
 .hambur.active nav{
-    background-color:transparent;
+    top: 450px;   
 }
 .ham-menu{
     height: 50px;
@@ -62,6 +66,7 @@ h2 span{
     margin-left: auto;
     position: relative;
     opacity: 1;
+   
 }
 .ham-menu span{
     height: 5px;
