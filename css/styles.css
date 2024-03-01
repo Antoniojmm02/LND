@@ -41,24 +41,20 @@ h2 span{
 .nav-bg{
     background-color: var(--secundario);
 }
-/* de aqui  */
+
+
+
+/* Version movil*/
 .hambur{
     position: fixed;
-    width: 100%;
+    right: 0;    
     top: 0;
-    left: 0;
     transition: 0.3s top;
-    display: flex;
-    justify-content: end;
 }
 .hambur nav{
     padding: 5px;
     display: flex;
     background-color: var();
-
-}
-.hambur.active{
-    z-index: 2;
 }
 .ham-menu{
     height: 50px;
@@ -66,7 +62,6 @@ h2 span{
     margin-left: auto;
     position: relative;
     opacity: 1;
-    z-index: 2;
 }
 .ham-menu span{
     height: 5px;
@@ -96,11 +91,6 @@ h2 span{
     top: 50%;
     transform: translate(-50%,-50%)rotate(-45deg);
 }
-.ham-menu.active{
-    z-index: 2;
-}
-
-
 .off-screen-menu{
     background-color: var(--secundario);
     height: 100vh;
@@ -111,11 +101,24 @@ h2 span{
     right: -450px;
     transition: .3 ease;
 }
+
 .off-screen-menu.active{
     right: 0;
-    z-index: 1;
+}
+.navegacionL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+}
+.navegacionL a{
+    font-weight: bold;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
 }
 /* hasta aqui */
+
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
@@ -124,14 +127,19 @@ h2 span{
 .navegacion-principal{
     display: none;
 }
+
 @media(min-width:768px){
     .navegacion-principal{
-        flex-direction: row;
         display: flex;
+        flex-direction: row;
         text-align:center;
         justify-content: space-around;
     }
+    .ham-menu{
+        display: none;
+    }
 }
+
 .navegacion-principal a{
     font-weight: bold;
     color: var(--blanco);
@@ -139,16 +147,18 @@ h2 span{
     padding: 1rem;
 }
 
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
 
 
 
 
 
 /* ImagenFondo */
-.navegacion-principal a:hover{
-    background-color: var(--primario);
-    color: var(--oscuro);
-}
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
