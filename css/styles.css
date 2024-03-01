@@ -213,6 +213,9 @@ h2 span{
     text-align: center;
     margin: 3rem;
 }
+.boton:hover{
+    background-color: var(--primario);
+}
 @media(min-width:768px){
     .boton{
         width: auto;
