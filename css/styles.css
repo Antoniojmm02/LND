@@ -117,6 +117,12 @@ h2 span{
     text-decoration: none;
     padding: 1rem;
 }
+.navegacionL a:hover{
+    background-color: var(--primario);
+    border-radius: 45%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 /* hasta aqui */
 
 .contenedor{
